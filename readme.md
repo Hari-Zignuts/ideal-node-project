@@ -18,7 +18,7 @@ This project is an ideal Node.js application with PostgreSQL and Sequelize datab
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/ideal-node-project.git
+    git clone https://github.com/Hari-Zignuts/ideal-node-project.git
     cd ideal-node-project
     ```
 
