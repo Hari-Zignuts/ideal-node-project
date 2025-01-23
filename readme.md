@@ -8,6 +8,9 @@ This project is an ideal Node.js application with PostgreSQL and Sequelize datab
 - CRUD operations for managing data
 - PostgreSQL database integration using Sequelize ORM
 - Comprehensive error handling
+- Internationalization (i18n) support for Gujarati (gu), Hindi (hi), and English (en)
+- Response language configuration via `Accept-Language` header
+- Input validation and sanitization using `validator.js`
 
 ## Prerequisites
 
