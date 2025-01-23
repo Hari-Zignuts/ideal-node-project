@@ -12,7 +12,7 @@ const httpStatusCodes = require('../constants/httpStatusCodes');
 
 const sendResponse = (res, status, message, data, error) => {
   // get status code from httpStatusCodes
-  const statusCode = httpStatusCodes[status] || 500;
+  const statusCode = httpStatusCodes[status] || status || 500;
 
   const localizedMessages = res.__('messages');
   const localizedMessage = localizedMessages[message] || message;

@@ -8,11 +8,6 @@ const sendErrorDev = (err, req, res) => {
   const stack = err.stack;
 
   sendResponse(res, statusCode, message, stack, err);
-  // res.status(statusCode).json({
-  //   status,
-  //   message,
-  //   stack,
-  // });
 };
 
 // helper function to send error in production
@@ -22,17 +17,9 @@ const sendErrorProd = (err, req, res) => {
 
   if (err.isOperational) {
     sendResponse(res, statusCode, message, null, err);
-    // res.status(statusCode).json({
-    //   status,
-    //   message,
-    // });
   } else {
     console.error("ERROR: ", err);
     sendResponse(res, 500, "Something went very wrong", null, err);
-    // res.status(500).json({
-    //   status: "error",
-    //   message: "Something went very wrong",
-    // });
   }
 };
 
