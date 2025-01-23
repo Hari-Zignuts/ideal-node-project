@@ -1,0 +1,23 @@
+{
+  "messages": {
+    "USER_CREATION_FAILED": "उपयोगकर्ता बनाने में विफल",
+    "INVALID_EMAIL_FORMAT": "अमान्य ईमेल प्रारूप",
+    "INVALID_PASSWORD_FORMAT": "अमान्य पासवर्ड प्रारूप",
+    "INVALID_CREDENTIALS": "अमान्य ईमेल या पासवर्ड",
+    "NO_USERS_FOUND": "कोई उपयोगकर्ता नहीं मिला",
+    "LOGIN_REQUIRED": "कृपया इस रूट तक पहुंचने के लिए लॉगिन करें",
+    "USER_NOT_FOUND": "उपयोगकर्ता अब अस्तित्व में नहीं है",
+    "PERMISSION_DENIED": "इस क्रिया को करने की अनुमति नहीं है",
+    "ROUTE_NOT_FOUND": "${req.originalUrl} इस सर्वर पर नहीं मिली",
+    "FIRST_NAME_REQUIRED": "पहला नाम आवश्यक है",
+    "LAST_NAME_REQUIRED": "अंतिम नाम आवश्यक है",
+    "PASSWORD_TOO_SHORT": "पासवर्ड कम से कम 6 अक्षरों का होना चाहिए",
+    "PASSWORDS_MISMATCH": "पासवर्ड और पुष्टि पासवर्ड मेल खाना चाहिए",
+    "INVALID_USER_TYPE": "अमान्य उपयोगकर्ता प्रकार",
+    "INVALID_TOKEN": "अमान्य टोकन। कृपया फिर से लॉगिन करें",
+    "USER_CREATED": "उपयोगकर्ता सफलतापूर्वक बनाया गया",
+    "LOGIN_SUCCESS": "लॉगिन सफल हुआ",
+    "INTERNAL_ERROR": "आंतरिक सर्वर त्रुटि",
+    "RESOURCE_NOT_FOUND": "संसाधन नहीं मिला"
+  }
+}

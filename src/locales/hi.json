@@ -1,0 +1,23 @@
+{
+  "messages": {
+    "USER_CREATION_FAILED": "વપરાશકર્તા બનાવવામાં નિષ્ફળ",
+    "INVALID_EMAIL_FORMAT": "અમાન્ય ઇમેઇલ ફોર્મેટ",
+    "INVALID_PASSWORD_FORMAT": "અમાન્ય પાસવર્ડ ફોર્મેટ",
+    "INVALID_CREDENTIALS": "અમાન્ય ઇમેઇલ અથવા પાસવર્ડ",
+    "NO_USERS_FOUND": "કોઈ વપરાશકર્તા મળ્યા નથી",
+    "LOGIN_REQUIRED": "આ રૂટ પર ઍક્સેસ કરવા માટે કૃપા કરીને લૉગિન કરો",
+    "USER_NOT_FOUND": "વપરાશકર્તા હવે અસ્તિત્વમાં નથી",
+    "PERMISSION_DENIED": "આ ક્રિયા કરવા માટે તમને પરવાનગી નથી",
+    "ROUTE_NOT_FOUND": "${req.originalUrl} આ સર્વર પર મળી શક્યું નથી",
+    "FIRST_NAME_REQUIRED": "પ્રથમ નામ જરૂરી છે",
+    "LAST_NAME_REQUIRED": "અંતિમ નામ જરૂરી છે",
+    "PASSWORD_TOO_SHORT": "પાસવર્ડ ઓછામાં ઓછા 6 અક્ષરનો હોવો જોઈએ",
+    "PASSWORDS_MISMATCH": "પાસવર્ડ અને પુષ્ટિ પાસવર્ડ મેચ થવા જોઈએ",
+    "INVALID_USER_TYPE": "અમાન્ય વપરાશકર્તા પ્રકાર",
+    "INVALID_TOKEN": "અમાન્ય ટોકન. કૃપા કરીને ફરીથી લૉગિન કરો",
+    "USER_CREATED": "વપરાશકર્તા સફળતાપૂર્વક બનાવવામાં આવ્યો",
+    "LOGIN_SUCCESS": "લૉગિન સફળ થયું",
+    "INTERNAL_ERROR": "આંતરિક સર્વર ભૂલ",
+    "RESOURCE_NOT_FOUND": "સંસાધન મળ્યું નથી"
+  }
+}
