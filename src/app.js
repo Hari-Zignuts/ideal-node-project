@@ -18,19 +18,15 @@ const i18n = require("./config/i18n");
 // app initialization 
 const app = express();
 
-// cors setup
-app.use(cors());
-
-// Set up EJS as the templating engine
-app.set("view engine", "ejs");
-
-// Set the directory where your EJS views are located
-app.set("views", path.join(__dirname, "views"));
-
 // global middlewares
-app.use(express.json());
+app.use(cors());
 app.use(i18n.init);
+app.use(express.json());
 app.use(selectLanguage);
+
+// set view engine and views path
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 
 // all routes
 app.use("/api/v1", apiRoutes);
