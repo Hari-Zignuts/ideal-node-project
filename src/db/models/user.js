@@ -1,9 +1,6 @@
 "use strict";
-const { Model, Sequelize, DataTypes } = require("sequelize");
-const bcrypt = require("bcrypt");
+const { DataTypes } = require("sequelize");
 const sequelize = require("../../config/database");
-const { default: AppError } = require("../../utils/appError");
-const project = require("./project");
 const Project = require("./project");
 
 // module.exports = (sequelize, DataTypes) => {
