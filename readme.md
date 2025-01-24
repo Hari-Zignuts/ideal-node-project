@@ -1,6 +1,6 @@
 # Ideal Node Project
 
-This project is an ideal Node.js application with PostgreSQL and Sequelize database integration. It includes user authentication (login and signup) and CRUD operations, along with comprehensive error handling.
+This project is an ideal Node.js application with PostgreSQL and Sequelize database integration. It includes user authentication (login and signup), CRUD operations, and comprehensive error handling.
 
 ## Features
 
@@ -10,7 +10,10 @@ This project is an ideal Node.js application with PostgreSQL and Sequelize datab
 - Comprehensive error handling
 - Internationalization (i18n) support for Gujarati (gu), Hindi (hi), and English (en)
 - Response language configuration via `Accept-Language` header
-- Input validation and sanitization using `validator.js`
+- Input validation and sanitization using `joi.js`
+- API endpoint testing with Jest and Supertest
+- Email notifications using Nodemailer and Mailtrap
+- Daily email scheduler using node-cron
 
 ## Prerequisites
 
@@ -50,6 +53,10 @@ This project is an ideal Node.js application with PostgreSQL and Sequelize datab
     # Admin credentials
     ADMIN_EMAIL=your_admin_email
     ADMIN_PASSWORD=your_admin_password
+
+    # Mailtrap credentials
+    MAILTRAP_USER=your_mailtrap_user
+    MAILTRAP_PASS=your_mailtrap_pass
     ```
 
 4. Run database migrations:
@@ -65,6 +72,13 @@ This project is an ideal Node.js application with PostgreSQL and Sequelize datab
     ```
 
 2. The server will be running on `http://localhost:your_app_port`.
+
+## Testing
+
+Run the tests using Jest and Supertest:
+```sh
+npm test
+```
 
 ## Error Handling
 
