@@ -1,5 +1,7 @@
 // core modules import
 const express = require("express");
+const cors = require('cors')
+const path = require("path");
 
 // all routes handler import
 const apiRoutes = require('./router/index');
@@ -15,6 +17,15 @@ const i18n = require("./config/i18n");
 
 // app initialization 
 const app = express();
+
+// cors setup
+app.use(cors());
+
+// Set up EJS as the templating engine
+app.set("view engine", "ejs");
+
+// Set the directory where your EJS views are located
+app.set("views", path.join(__dirname, "views"));
 
 // global middlewares
 app.use(express.json());
