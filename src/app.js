@@ -2,9 +2,7 @@
 const express = require("express");
 
 // all routes handler import
-const authRouter = require("./router/authRoute");
-const projectRouter = require("./router/projectRoute");
-const userRouter = require("./router/userRoute");
+const apiRoutes = require('./router/index');
 const globalErrorHandler = require("./controller/errorController");
 
 // custom middleware import
@@ -24,15 +22,13 @@ app.use(i18n.init);
 app.use(selectLanguage);
 
 // all routes
-app.use("/api/v1/auth", authRouter);
-app.use("/api/v1/projects", projectRouter);
-app.use("/api/v1/users", userRouter);
+app.use("/api/v1", apiRoutes);
 
 // 404 route handler
 app.use(
   "*",
   catchAsync(async (req) => {
-    throw new AppError(`Can't find ${req.originalUrl} on this server`, 404);
+    return next(new AppError(`Can't find ${req.originalUrl} on this server`, 404));
   })
 );
 

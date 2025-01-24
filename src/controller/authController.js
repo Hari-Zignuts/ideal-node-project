@@ -3,7 +3,7 @@ const User = require("../db/models/user");
 
 // utils imports
 const AppError = require("../utils/appError");
-const { gnerateToken } = require("../utils/jwt");
+const { gnerateToken } = require("../services/jwt");
 const catchAsync = require("../utils/catchAsync");
 const sendResponse = require("../utils/responseHelper");
 
@@ -38,7 +38,7 @@ const singup = catchAsync(async (req, res, next) => {
 
   // check if user creation failed
   if (!newUser) {
-    next(new AppError("USER_CREATION_FAILED", "INTERNAL_SERVER_ERROR"));
+    return next(new AppError("USER_CREATION_FAILED", "INTERNAL_SERVER_ERROR"));
   }
 
   // remove sensitive data from the response
