@@ -21,7 +21,7 @@ describe("POST /api/v1/auth/login", () => {
         .post("/api/v1/auth/login")
         .set("accept-language", "en")
         .send({
-          email: "test@gmail.com",
+          email: "logintest@gmail.com",
           password: "test@123",
         });
 
